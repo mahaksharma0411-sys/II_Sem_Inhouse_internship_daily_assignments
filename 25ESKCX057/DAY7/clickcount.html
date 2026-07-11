@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Counter</title>
+</head>
+<body>
+
+<button id="btn" data-count="0">Click Me</button>
+
+<h2 id="count">0</h2>
+
+<script>
+
+let btn = document.getElementById("btn");
+
+btn.onclick = function() {
+    this.dataset.count++;
+    document.getElementById("count").innerHTML = this.dataset.count;
+}
+
+</script>
+
+</body>
+</html>
